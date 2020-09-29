@@ -7,6 +7,6 @@ jobs:
     steps:
       - checkout
       - run: yarn
-      - run: yarn build
+      - run: yarn tsc
       - run: yarn test
 
