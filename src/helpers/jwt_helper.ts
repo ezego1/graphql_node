@@ -41,7 +41,7 @@ export const verifyAccessToken = (req: Request, res: Response, next: NextFunctio
         req["isAuth"] = false
         return next()
     }
-    console.log(decodedToken)
+    
     if (!decodedToken) {
         req["isAuth"] = false;
         return next();
