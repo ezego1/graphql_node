@@ -168,7 +168,7 @@ describe("The GraphQL API", () => {
     expect(response.type).toBe("application/json");
     expect(response.status).toBe(200);
 
-    console.log(response.body);
+    
     // expect(response.body[0]).toHaveProperty("_id");
   });
 
