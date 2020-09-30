@@ -8,7 +8,7 @@ import dotenv from "dotenv"
 import { verifyAccessToken } from "./helpers/jwt_helper"
 
 
-// dotenv.config();
+dotenv.config();
 
 import "./helpers/init_mongodb"
 

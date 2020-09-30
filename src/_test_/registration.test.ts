@@ -168,7 +168,6 @@ describe("The GraphQL API", () => {
     expect(response.type).toBe("application/json");
     expect(response.status).toBe(200);
 
-    
     // expect(response.body[0]).toHaveProperty("_id");
   });
 
@@ -243,8 +242,6 @@ describe("The GraphQL API", () => {
     expect(updated).toHaveProperty("country");
     expect(updated).toHaveProperty("marketValue");
   });
-
-  
 
   afterAll(async () => {
     await mongoose.connection.close();
