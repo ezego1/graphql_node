@@ -11,6 +11,12 @@ on:
 
 jobs:
   build:
+    env:
+      TEST_DATABASE_URL: ${{secrets.TEST_DATABASE_URL}}
+      SECRET_KEY: ${{secrets.SECRET_KEY}}
+      NODE_ENV: ${{secrets.NODE_ENV}}
+      PRODUCTION_DATABASE_URL: ${{secrets.PRODUCTION_DATABASE_URL}}
+
 
     runs-on: ubuntu-latest
 
